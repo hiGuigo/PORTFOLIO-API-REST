@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Guilherme Alvarenga</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script type="module" src="./js/main.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER DESKTOP -->
+    <header class="cabecalho">
+      <h1>Guilherme Alvarenga - Portfólio</h1>
+
+      <nav>
+        <a href="./assets/docs/guilherme_alvarenga_curriculo.pdf" download>
+          BAIXAR-CURRÍCULO
+        </a>
+        <a href="#sobreContainer">SOBRE</a>
+        <a href="#projetosContainer">PROJETOS</a>
+        <a href="#certificadosContainer">CERTIFICADOS</a>
+      </nav>
+    </header>
+
+    <!-- HEADER MOBILE -->
+    <header class="cabecalhoResponsivo">
+      <h1>Guilherme Alvarenga - Portfólio</h1>
+
+      <nav>
+        <a href="./assets/docs/guilherme_alvarenga_curriculo.pdf" download>
+          BAIXAR-CURRÍCULO
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- BANNER DESKTOP -->
+      <section class="banner">
+        <aside class="esquerda">
+          <div>
+            <h2 class="saudacao"></h2>
+            <h1>Guilherme!</h1>
+
+            <p>Tecnólogo em Análise e Desenvolvimento de Sistemas,</p>
+            <p>e estudante de Desenvolvimento de Software Multiplataforma</p>
+
+            <div class="contato">
+              <img
+                src="./assets/images/email.png"
+                alt="Email"
+                style="width: 50px; cursor: pointer"
+                onclick="
+                  navigator.clipboard
+                    .writeText('guilherme.alvarenga021@gmail.com')
+                    .then(() => alert('Endereço de email copiado!'))
+                "
+              />
+
+              <a href="https://github.com/hiGuigo"
+                ><img
+                  src="./assets/images/github.png"
+                  alt="GitHub"
+                  style="width: 50px"
+              /></a>
+
+              <a
+                href="https://www.linkedin.com/in/guilherme-alvarenga-0834b938a/"
+              >
+                <img
+                  src="./assets/images/linkedin.png"
+                  alt="LinkedIn"
+                  style="width: 50px; cursor: pointer"
+                />
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <aside class="direita">
+          <img src="./assets/images/foto3.png" alt="Foto de perfil" />
+        </aside>
+      </section>
+
+      <!-- BANNER MOBILE -->
+      <section class="bannerResponsivo">
+        <div>
+          <img
+            src="./assets/images/foto2.jpg"
+            alt="Foto de perfil"
+            class="fotoResponsiva"
+          />
+
+          <h2 class="saudacao"></h2>
+          <h1>Guilherme!</h1>
+
+          <p>Tecnólogo em Análise e Desenvolvimento de Sistemas,</p>
+          <p>e estudante de Desenvolvimento de Software Multiplataforma</p>
+        </div>
+
+        <div class="contato">
+          <img
+            src="./assets/images/email.png"
+            alt="Email"
+            style="width: 50px; cursor: pointer"
+            onclick="
+              navigator.clipboard
+                .writeText('guilherme.alvarenga021@gmail.com')
+                .then(() => alert('Endereço de email copiado!'))
+            "
+          />
+
+          <a href="https://github.com/hiGuigo">
+            <img
+              src="./assets/images/github.png"
+              alt="GitHub"
+              style="width: 50px"
+            />
+          </a>
+
+          <a href="https://www.linkedin.com/in/guilherme-alvarenga-0834b938a/">
+            <img
+              src="./assets/images/linkedin.png"
+              alt="LinkedIn"
+              style="width: 50px; cursor: pointer"
+            />
+          </a>
+        </div>
+      </section>
+
+      <div class="transicao"></div>
+
+      <!-- SOBRE -->
+      <section
+        id="sobreContainer"
+        class="container"
+        style="scroll-margin-top: 50px"
+      >
+        <!-- SOBRE MIM -->
+        <article class="sobre">
+          <span class="sobreContainer">
+            <h2>Sobre mim</h2>
+          </span>
+        </article>
+
+        <!-- DESCRIÇÃO -->
+        <article class="descricao">
+          <span class="formacoesContainer">
+            <h2>Formação</h2>
+          </span>
+
+          <span class="competenciasContainer">
+            <h2>Competências</h2>
+          </span>
+
+          <span class="experienciasContainer">
+            <h2>Experiências em Projetos</h2>
+          </span>
+        </article>
+      </section>
+
+      <div class="transicao" style="height: 50px"></div>
+
+      <!-- PROJETOS -->
+      <section
+        id="projetosContainer"
+        class="projetosContainer"
+        style="scroll-margin-top: 50px"
+      >
+        <h1 style="margin: 2rem; font-size: 30pt">PROJETOS</h1>
+      </section>
+
+      <div class="transicao" style="height: 50px"></div>
+
+      <!-- CERTIFICADOS -->
+      <section
+        id="certificadosContainer"
+        class="certificadosContainer"
+        style="scroll-margin-top: 50px"
+      >
+        <h1 style="margin: 2rem; font-size: 30pt">CERTIFICADOS</h1>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Guilherme Alvarenga - 2025</p>
+    </footer>
+  </body>
+</html>

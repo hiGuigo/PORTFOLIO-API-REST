@@ -1,0 +1,414 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding-top: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.bannerResponsivo {
+  display: none;
+}
+
+.cabecalhoResponsivo {
+  display: none;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-color: rgb(68, 68, 68);
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.cabecalho a:hover {
+  transition: 0.5s;
+  color: lightgrey;
+  text-decoration: none;
+}
+
+.cabecalho > * {
+  margin: 2rem;
+}
+
+.cabecalho * {
+  text-decoration: none;
+  color: #fff;
+  margin-inline: 0.5rem;
+}
+
+.banner {
+  display: flex;
+  height: calc(100vh - 50px);
+  background-color: #fff;
+}
+
+.banner .esquerda,
+.banner .direita {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-weight: bold;
+}
+
+.banner .direita {
+  background-color: #fff;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.banner .esquerda div {
+  width: 500px;
+  height: 300px;
+  color: #000;
+}
+
+.banner .esquerda h1 {
+  font-size: 50pt;
+  margin: 0;
+}
+
+.banner .esquerda h2 {
+  font-size: 20pt;
+  margin-bottom: 1rem;
+}
+
+.banner .esquerda p {
+  margin-left: 0.5rem;
+}
+
+.banner .direita {
+  background-color: grey;
+}
+
+.banner .direita img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contato {
+  margin-top: 2rem;
+}
+
+.contato img {
+  margin: 0.5rem;
+}
+
+.transicao {
+  height: 150px;
+  background-color: #444444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sobre {
+  width: 30%;
+  padding: 2rem;
+  font-size: 12pt;
+}
+
+.sobre h2 {
+  font-size: 25pt;
+  margin-bottom: 1rem;
+}
+
+.sobre p {
+  text-indent: 0.75rem;
+  text-align: justify;
+  margin: 1rem;
+  line-height: 1.5;
+}
+
+.sobre img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.sobre a {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  text-decoration: none;
+  justify-content: center;
+  color: #fff;
+  background-color: grey;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.sobre a:hover {
+  background-color: #616161;
+  transition: 0.5s;
+}
+
+.sobre img:hover {
+  filter: brightness(90%);
+  transition: 0.5s;
+}
+
+.competenciasTecnicas {
+  font-weight: bold;
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 70%;
+  padding: 2rem;
+}
+
+.descricao h2 {
+  font-size: 25pt;
+}
+
+.descricao p {
+  margin: 0.75rem;
+}
+
+.descricao div {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* página projetos */
+.projetosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.projetosContainer article {
+  display: flex;
+  width: 60%;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.projetosContainer article img {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+  border-color: #000;
+}
+
+.projetosContainer article div {
+  margin-left: 1rem;
+}
+
+.projetosContainer article h1 {
+  font-size: 20pt;
+}
+
+.projetosContainer article h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 16pt;
+}
+
+.projetosContainer article p {
+  font-size: 12pt;
+  text-align: justify;
+  text-indent: 0.5rem;
+  line-height: 1.5;
+}
+
+.projetosContainer article a {
+  font-size: 12pt;
+  text-align: justify;
+  text-indent: 0.5rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.projetosContainer article a:hover {
+  transition: 0.5s;
+  color: #616161;
+  text-decoration: none;
+}
+/* fim página projetos */
+
+/* página certificados */
+.certificadosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.certificadosContainer article {
+  max-width: 50%;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.certificadosContainer article h1 {
+  font-size: 20pt;
+  margin-bottom: 1rem;
+}
+
+.certificadosContainer article img {
+  width: 100%;
+}
+/* fim página certificados */
+
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: rgb(68, 68, 68);
+  padding: 0.5rem;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .cabecalho {
+    display: none;
+  }
+
+  .cabecalhoResponsivo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: rgb(68, 68, 68);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .cabecalhoResponsivo a:hover {
+    transition: 0.5s;
+    color: lightgrey;
+    text-decoration: none;
+  }
+
+  .cabecalhoResponsivo > * {
+    margin: 1rem;
+  }
+
+  .cabecalhoResponsivo * {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .banner .esquerda,
+  .banner .direita {
+    display: none;
+  }
+
+  .banner {
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre,
+  .descricao {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .sobre h2,
+  .descricao h2 {
+    font-size: 20pt;
+  }
+
+  .sobre p,
+  .descricao p {
+    margin: 0.5rem 0;
+    font-size: 14pt;
+  }
+
+  .transicao {
+    height: 100px;
+  }
+
+  /* banner responsivo */
+  .bannerResponsivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    font-weight: bold;
+  }
+
+  .fotoResponsiva {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+  }
+
+  .bannerResponsivo h2 {
+    font-size: 20pt;
+    text-align: left;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .bannerResponsivo h1 {
+    font-size: 60pt;
+  }
+
+  .bannerResponsivo p {
+    font-size: 12Spt;
+  }
+
+  .projetosContainer article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .projetosContainer h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
