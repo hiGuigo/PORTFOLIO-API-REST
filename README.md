@@ -2,9 +2,10 @@
 
 <div align="center">
 
-|                                                                                                                                                                                                                                                           |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <a href="#sobre">Sobre</a> • <a href="#manual">Manual de Instalação</a> • <a href="#rotas">Rotas da API</a> • <a href="#exemplo">Exemplo de Requisição</a> • <a href="#stack">Stack Utilizada</a> • <a href="#caracteristicas">Características da API</a> |
+|                                                                                                                                                                                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <p align="center"><a href="#sobre">Sobre</a> • <a href="#manual">Manual de Instalação</a> • <a href="#rotas">Rotas da API</a> </p> <a href="#exemplo">Exemplo de Requisição</a> • <a href="#stack">Stack Utilizada</a> • <a href="#caracteristicas">Características da API</a> |
+|                                                                                                                                                                                                                                                                                |
 
 </div>
 
@@ -69,18 +70,19 @@ Defina: "username" e "password"
 4. Configure o arquivo `.env`
 
 ```bash
+1. Crie o .env com base no arquivo modelo:
 cp .env.sample .env
 
-altere as credencias:
+2. altere as credencias:
  - usuario
  - senha
  - seu_mongo_cluster
 ```
 
-5. Inicie o servidor:
+5. Inicie o servidor em modo desenvolvimento:
 
 ```bash
-npm run start
+npm run dev
 ```
 
 O backend estará disponível em `http://localhost:3000` por padrão.
